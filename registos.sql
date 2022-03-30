@@ -1,0 +1,1 @@
+-- Para comandos de inserção de dados na base de dados

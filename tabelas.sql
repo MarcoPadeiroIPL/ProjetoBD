@@ -1,0 +1,1 @@
+-- Para comandos para a criação da base de dados e tabelas (nome base de dados = codigo de equipa do projeto)
