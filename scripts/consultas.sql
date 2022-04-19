@@ -1,0 +1,1 @@
+-- Para consultas importantes para ajudar a gerir o sistema
