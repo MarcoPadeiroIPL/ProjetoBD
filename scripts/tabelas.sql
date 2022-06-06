@@ -124,7 +124,7 @@ CREATE TABLE exames(
     id_instrutor INT NOT NULL,
     id_veiculo INT NOT NULL,
     id_instituicao INT NOT NULL,
-    CONSTRAINT pk_aulas_id PRIMARY KEY(id),
+    CONSTRAINT pk_exames_id PRIMARY KEY(id),
     CONSTRAINT fk_alunos_id FOREIGN KEY(id_aluno) REFERENCES alunos(id),
     CONSTRAINT fk_instrutores_id FOREIGN KEY(id_instrutor) REFERENCES instrutores(id),
     CONSTRAINT fk_veiculos_id FOREIGN KEY(id_veiculo) REFERENCES veiculos(id),
