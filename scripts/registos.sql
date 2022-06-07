@@ -22,7 +22,7 @@ VALUES ('2460-612', 'Alcobaça', 'Rua de Leiria', '24-09-1990', '918221123', 'Fe
 ('2400-108', 'Leiria', 'Rua António Vieira', '16-04-2002', '926408246', 'Masculino', '939393939', 'rodrigonçalve5@hotmail.com', 'Rodrigo', 'Gonçalves'),
 ('2400-666', 'Leiria', 'Rua Bartolomeu Dias', '16-06-2001', '916916916', 'Feminino', '619916169', 'sofcasilhas@gmail.com', 'Sofia', 'Casilhas'),
 ('2400-004', 'Leiria', 'Rua Maria Joana', '10-10-2000', '910101019', 'Feminino', '100100100', 'fidalgo10@gmail.com', 'Joana', 'Fidalgo'),
-('2520-205', 'Peniche', 'Rua José o Pescador', '05-05-2001', '915519915', 'Masculino', '105105105', 'danielmoreira@hotmail.com', 'Daniel’, 'Moreira'),
+('2520-205', 'Peniche', 'Rua José o Pescador', '05-05-2001', '915519915', 'Masculino', '105105105', 'danielmoreira@hotmail.com', 'Daniel', 'Moreira'),
 ('2520-202', 'Peniche', 'Rua Mateus Gouveia', '02-02-2002', '912021201', 'Feminino', '212000212', 'carolinasous02@sapo.pt', 'Carolina', 'Sousa'),
 ('2500-055', 'Caldas da Rainha', 'Rua Maria Assunção', '15-01-2001', '915555519', 'Feminino', '501105501', 'ritamarquz@gmail.com', 'Rita', 'Marquês');
 
@@ -43,13 +43,13 @@ VALUES ('6', 'pagou', 'passou', '2'),
 
 INSERT INTO marcas (nome)
 VALUES ('Renault'),('Citroen'),('Peugeot'),('Audi'),('Opel'),
-('Toyota'),('Yamaha'),('Suzuki'),('Kawasaki'),('mercedes'),(volvo),
+('Toyota'),('Yamaha'),('Suzuki'),('Kawasaki'),('mercedes'),('Volvo'),
 
 
 
 INSERT INTO modelos (nome, id_marca)
 VALUES ('megane', '1'), ('clio', '1'), ('C1', '2'), ('DS3', '2'), ('208', '3'), ('308', '3'),
-('A1', '4'),('A4', '4'),('Corsa', '5'),('Adam', '5'),('Supra', 6),('ybr, 7),('r1',7),('Burgman',8),
+('A1', '4'),('A4', '4'),('Corsa', '5'),('Adam', '5'),('Supra', 6),('ybr', 7),('r1',7),('Burgman',8),
 ('gsxr',8),('kdx',9),('h2r',9),('Axor',10),('FM FURGONE',11);
 
 INSERT INTO veiculos (seguro, avaria, nKilometros, combustivel, consumo, anoVeiculo, matricula, proximaManutencao, ultimaManutencao, id_instituicao,id_modelo)
