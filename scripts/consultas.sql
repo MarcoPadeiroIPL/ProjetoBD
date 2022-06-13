@@ -11,3 +11,8 @@ SELECT COUNT(*) AS Numero_Aulas
 FROM aulas
 WHERE id_aluno=6 AND dtaInicio < CURDATE(); 
 
+-- @block Quero saber o numero de alunos que cada instrutor tem
+SELECT i.id_pessoa, i.pNome, i.apelido,COUNT(*) AS Numero_alunos
+FROM alunos a INNER JOIN instrutores i ON a.id_instrutor=i.id_pessoa 
+GROUP BY id_instrutor;
+

@@ -27,7 +27,26 @@ VALUES
 (8, '2400-004', 'Leiria', 'Rua Maria Joana', '2000-10-10', '910101019', 'Feminino', '100100100', 'fidalgo10@gmail.com', 'Joana', 'Fidalgo'),
 (9, '2520-205', 'Peniche', 'Rua José o Pescador', '2001-05-05', '915519915', 'Masculino', '105105105', 'danielmoreira@hotmail.com', 'Daniel', 'Moreira'),
 (10, '2520-202', 'Peniche', 'Rua Mateus Gouveia', '2002-02-02', '912021201', 'Feminino', '212000212', 'carolinasous02@sapo.pt', 'Carolina', 'Sousa'),
-(11, '2500-055', 'Caldas da Rainha', 'Rua Maria Assunção', '2001-01-15', '915555519', 'Feminino', '501105501', 'ritamarquz@gmail.com', 'Rita', 'Marquês');
+(11, '2500-055', 'Caldas da Rainha', 'Rua Maria Assunção', '1998-01-15', '915555519', 'Feminino', '501105501', 'ritamarquz@gmail.com', 'Rita', 'Marquês');
+(12, '2400-002', 'Leiria', 'Rua Fonseca Algarve', '2002-08-29', '917722110', 'Masculino', '110022901', 'franciscosousa@gmail.com', 'Francisco', 'Sousa');
+(13, '2500-817', 'Caldas da Rainha', 'Rua Peru Cru', '2002-03-19', '968999123', 'Masculino', '111998740', 'guilhermetropa@gmail.com', 'Guilherme', 'Guerra');
+(14, '2500-026', 'Caldas da Rainha', 'Rua Fonseca Algarve', '2002-08-29', '918221221', 'Masculino', '110022901', 'andrepereira@gmail.com', 'André', 'Pereira');
+(15, '2500-002', 'Caldas da Rainha', 'Rua Joaquim Almeida', '2001-11-09', '919828121', 'Feminino', '221882192', 'joanamendes@gmail.com', 'Joana', 'Mendes');
+(16, '2500-222', 'Caldas da Rainha', 'Rua Muitas Costelas', '2003-02-01', '918221289', 'Feminino', '612312892', 'carolinamartins@gmail.com', 'Carolina', 'Martins');
+(17, '2520-200', 'Peniche', 'Rua Compra Lagos', '2003-06-20', '919886770', 'Masculino', '112190192', 'joaomercedes@gmail.com', 'João', 'Mercedes');
+(18, '2520-897', 'Peniche', 'Rua Alberto Segundo', '2000-09-22', '968991234', 'Masculino', '333444910', 'diogocentro@gmail.com', 'Diogo', 'Meios');
+(19, '2400-921', 'Leiria', 'Rua Merenda Quente', '2002-12-25', '967991221', 'Masculino', '133109210', 'andremendes@gmail.com', 'André', 'Mendes');
+(20, '2400-900', 'Leiria', 'Rua Joaquim Marcos', '2003-03-04', '969110293', 'Feminino', '291229012', 'andreiatequila@gmail.com', 'Andreia', 'Tequila');
+(21, '2400-218', 'Leiria', 'Rua Alberto Quinto', '2001-05-05', '918992192', 'Masculino', '528172890', 'luisfernandes@gmail.com', 'Luis', 'Fernandes');
+(22, '2400-321', 'Leiria', 'Rua da Felicidade', '2001-02-28', '910080089', 'Masculino', '291850291', 'leandromoreira@gmail.com', 'Leandro', 'Moreira');
+(23, '2400-452', 'Leiria', 'Rua Fonte Perto', '2000-05-16', '912835821', 'Feminino', '059182948', 'inesbernardes@gmail.com', 'Inês', 'Bernardes');
+(24, '2400-500', 'Leiria', 'Rua Faro Longe', '2002-10-10', '961029852', 'Feminino', '291858271', 'luisahenriques@gmail.com', 'Luisa', 'Henriques');
+(25, '2400-682', 'Leiria', 'Rua da Luz', '2002-09-19', '918920989', 'Masculino', '892718592', 'henriquesousa@gmail.com', 'Henrique', 'Sousa');
+(26, '2400-245', 'Leiria', 'Rua Comboio Aldante', '2003-08-02', '969112910', 'Masculino', '019228175', 'diogocosta@gmail.com', 'Diogo', 'Costa');
+(27, '2400-833', 'Leiria', 'Rua Joao Almeida', '2003-07-22', '918920977', 'Masculino', '296628666', 'fernandomendes@gmail.com', 'Fernando', 'Mendes');
+(28, '2400-122', 'Leiria', 'Rua Henrique Terceiro', '1999-04-01', '917789766', 'Feminino', '492910299', 'arianapereira@gmail.com', 'Ariana', 'Pereira');
+(29, '2400-441', 'Leiria', 'Rua Fonseca', '1999-01-30', '917221849', 'Masculino', '752174582', 'tiagogoncalves@gmail.com', 'Tiago', 'Gonçalves');
+(30, '2400-882', 'Leiria', 'Rua Jacinto Dias', '2000-01-24', '912002918', 'Feminino', '1221412829', 'beatrizoliveira@gmail.com', 'Beatriz', 'Oliveira');
 
 INSERT INTO categorias (nome) VALUES
 ('AM'), ('A1'), ('A2'), ('A'), ('B1'), ('B'), ('C1'), ('C'), ('D1'), ('D'), ('BE'), ('C1E'), ('CE'), ('D1E'), ('DE'), ('T');
@@ -47,12 +66,31 @@ INSERT INTO categoriasInstrutores(id_instrutor, id_categoria) VALUES
 (5, 6), (5, 5), (5,7), (5,8);
 
 INSERT INTO alunos (id_pessoa, estadoPag, estadoCod, id_instrutor, id_categoria)
-VALUES (6, 'pagou', 'passou', 2, 4),
+VALUES (6, 'pagou', 'passou', 3, 4),
 (7, 'pagou', 'chumbou', 3, 6),
 (8, 'pagou', 'passou', 2, 6),
-(9, 'por pagar', 'por fazer', 1, 6),
-(10, 'pagou', 'por fazer', 4, 10),
-(11, 'pagou', 'passou', 5, 6);
+(9, 'por pagar', 'por fazer', 5, 6),
+(10, 'pagou', 'por fazer', 5, 10),
+(11, 'pagou', 'passou', 4, 6);
+(12, 'pagou', 'passou', 1, 2);
+(13, 'pagou', 'por fazer', 4, 2);
+(14, 'por pagar', 'passou', 4, 10);
+(15, 'pagou', 'passou', 4, 6);
+(16, 'por pagar', 'chumbou', 4, 6);
+(17, 'pagou', 'passou', 5, 4);
+(18, 'pagou', 'chumbou', 5, 10);
+(19, 'por pagar', 'passou', 1, 11);
+(20, 'pagou', 'passou', 1, 8);
+(21, 'por pagar', 'chumbou', 3, 6);
+(22, 'pagou', 'passou', 3, 6);
+(23, 'pagou', 'passou', 2, 6);
+(24, 'pagou', 'por fazer', 2, 4);
+(25, 'pagou', 'passou', 3, 6);
+(26, 'pagou', 'por fazer', 1, 2);
+(27, 'por pagar', 'por fazer', 1, 6);
+(28, 'por pagar', 'passou', 3, 2);
+(29, 'por pagar', 'passou', 2, 1);
+(30, 'pagou', 'chumbou', 3, 10);
 
 INSERT INTO marcas (nome)
 VALUES 
