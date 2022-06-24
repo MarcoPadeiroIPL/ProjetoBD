@@ -13,9 +13,9 @@ WHERE dtaInicio < CURDATE()
 GROUP BY a.id_pessoa
 ORDER BY NumAulas DESC; 
 
--- @block Quero saber o numero de alunos que um instrutor tem que ja pagou
-SELECT i.id_pessoa AS ID, p.pNome AS PrimeiroNome, p.apelido, COUNT(*) as Numero_alunos
-FROM alunos a INNER JOIN instrutores i ON a.id_instrutor=i.id_pessoa INNER JOIN pessoas p ON i.id_pessoa=p.id
+-- @block Quero saber o numero de alunos que já pagou que cada instituicao tem um instrutor tem que ja pagou
+SELECT ii.*, COUNT(*) as Numero_alunos
+FROM alunos a INNER JOIN instrutores i ON a.id_instrutor=i.id_pessoa INNER JOIN instituicoes ii ON i.id_instituicao=ii.id
 WHERE a.estadoPag = "pagou"
 GROUP BY id_instrutor
 ORDER BY Numero_alunos DESC;
@@ -81,7 +81,7 @@ GROUP BY i.id_pessoa
 ORDER BY NumAulas DESC;
 
 -- @block Quero saber todos os carros que precisam de ir à manutenção este ano
-SELECT *
+SELECT v.*
 FROM veiculos v INNER JOIN modelos m ON m.id=v.id_modelo INNER JOIN marcas mm ON mm.id=m.id_marca
 WHERE YEAR(v.proximaManutencao) = YEAR(NOW()) AND v.proximaManutencao > NOW()
 ORDER BY v.id;
