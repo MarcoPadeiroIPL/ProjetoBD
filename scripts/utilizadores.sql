@@ -26,6 +26,15 @@ GROUP BY a.id_pessoa;
 SELECT * FROM VER_NUMERO_AULAS;
 
 -- @block Vista para ver os exames marcados
+CREATE OR REPLACE VIEW VER_FUTURAS_AULAS AS
+SELECT a.id_pessoa, p.pNome, p.apelido, aa.dtaInicio, aa.dtaFim, mm.nome AS "Marca", m.nome AS "Modelo", v.matricula
+FROM aulas aa INNER JOIN alunos a ON aa.id_aluno=a.id_pessoa INNER JOIN pessoas p ON p.id=a.id_pessoa INNER JOIN veiculos v ON v.id=aa.id_veiculo INNER JOIN modelos m ON m.id=v.id_modelo INNER JOIN marcas mm ON m.id_marca=mm.id
+WHERE aa.dtaInicio > NOW();
+
+-- @block Teste vista VER_FUTURUAS_AULAS 
+SELECT * FROM VER_FUTURAS_AULAS;
+
+-- @block Vista para ver os exames marcados
 CREATE OR REPLACE VIEW VER_FUTUROS_EXAMES AS
 SELECT a.id_pessoa, p.pNome, p.apelido, e.dtaInicio, e.dtaFim, mm.nome AS "Marca", m.nome AS "Modelo", v.matricula
 FROM exames e INNER JOIN alunos a ON e.id_aluno=a.id_pessoa INNER JOIN pessoas p ON p.id=a.id_pessoa INNER JOIN veiculos v ON v.id=e.id_veiculo INNER JOIN modelos m ON m.id=v.id_modelo INNER JOIN marcas mm ON m.id_marca=mm.id
