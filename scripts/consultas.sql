@@ -67,15 +67,15 @@ GROUP BY ii.id
 ORDER BY ii.id ASC;
 
 -- @block Quero saber o numero de alunos que ja pagaram por categoria
-SELECT *, COUNT(*) as NumAlunos
+SELECT c.*, COUNT(*) as NumAlunos
 FROM categorias c INNER JOIN alunos a ON a.id_categoria=c.id 
 WHERE a.estadoPag = "pagou"
 GROUP BY c.id
 ORDER BY NumAlunos DESC;
 
 -- @block Quero saber o numero de aulas que cada instrutor deu
-SELECT i.*, COUNT(*) as NumAulas
-FROM alunos a INNER JOIN aulas aa ON aa.id_aluno=a.id_pessoa INNER JOIN instrutores i ON i.id_pessoa=a.id_instrutor
+SELECT i.id_pessoa, p.pNome, p.Apelido, COUNT(*) as NumAulas
+FROM alunos a INNER JOIN aulas aa ON aa.id_aluno=a.id_pessoa INNER JOIN instrutores i ON i.id_pessoa=a.id_instrutor INNER JOIN pessoas p ON p.id=i.id_pessoa
 WHERE a.estadoPag = "pagou"
 GROUP BY i.id_pessoa 
 ORDER BY NumAulas DESC;
