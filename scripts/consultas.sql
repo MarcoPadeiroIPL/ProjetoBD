@@ -47,12 +47,6 @@ GROUP BY ii.id
 ORDER BY ii.id ASC) S
 WHERE NumAlunos>=5;
 
-    
--- @block Quero saber a taxa de sucesso de cada instituição
-SELECT ii.*, COUNT((SELECT id FROM exames WHERE estado="passou")) as PASSOU, COUNT((SELECT id FROM exames WHERE estado="chumbou")) as CHUMBOU
-FROM exames e INNER JOIN veiculos v ON v.id=e.id_veiculo INNER JOIN instituicoes ii ON ii.id=v.id_instituicao
-GROUP BY ii.id;
-
 -- @block Quero saber o numero de aulas que cada veiculo teve
 SELECT v.id as ID_VEICULO, mm.nome as MARCA, m.nome as MODELO, COUNT(*) as numAulas
 FROM veiculos v INNER JOIN aulas aa ON aa.id_veiculo=v.id INNER JOIN modelos m ON m.id=v.id_modelo INNER JOIN marcas mm ON mm.id=m.id_marca
@@ -85,6 +79,12 @@ FROM alunos a INNER JOIN aulas aa ON aa.id_aluno=a.id_pessoa INNER JOIN instruto
 WHERE a.estadoPag = "pagou"
 GROUP BY i.id_pessoa 
 ORDER BY NumAulas DESC;
+
+-- @block Quero saber todos os carros que precisam de ir à manutenção este ano
+SELECT *
+FROM veiculos v INNER JOIN modelos m ON m.id=v.id_modelo INNER JOIN marcas mm ON mm.id=m.id_marca
+WHERE YEAR(v.proximaManutencao) = YEAR(NOW()) AND v.proximaManutencao > NOW()
+ORDER BY v.id;
 
 
 
