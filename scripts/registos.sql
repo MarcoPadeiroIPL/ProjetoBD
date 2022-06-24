@@ -6,7 +6,6 @@ Tomás Martins Moura, estudante n.º 2211866
 */
 -- Para comandos de inserção de dados na base de dados
 
-
 INSERT INTO instituicoes (localizacao, nome, abreviatura, telefone, email) 
 VALUES 
 ('Leiria', 'Escola Superior de Educação e Ciências Sociais','ESECS', '244829400','esecs@ipleiria.pt'),
@@ -18,7 +17,7 @@ VALUES
 INSERT INTO pessoas (id, codPostal, localidade, rua, dtaNasc, telefone, genero, NIF, email, pNome, apelido)
 VALUES 
 (1, '2460-612', 'Alcobaça', 'Rua de Leiria', '1990-09-24', '918221123', 'Feminino', '312332457', 'ab2000@hotmail.com', 'Maria', 'Fonseca'),
-(2, '2460-023', 'Alcobaça', 'Rua Joaquim das Dores', '1970-12-04', '91777589', 'Masculino', '332210022', 'joaopedro2002@gmail.com', 'João', 'Pedro'),
+(2, '2460-023', 'Alcobaça', 'Rua Joaquim das Dores', '1970-12-04', '917775891', 'Masculino', '332210022', 'joaopedro2002@gmail.com', 'João', 'Pedro'),
 (3, '2400-123', 'Leiria', 'Rua Joaquim Mones', '1978-02-28', '919191919', 'Feminino', '311313313', 'albertinamaia@gmail.com', 'Albertina', 'Maia'),
 (4, '2400-144', 'Leiria', 'Rua Alberto da fonte', '1984-05-30', '911111119', 'Masculino', '312322157', 'franciscoaha@hotmail.com', 'Francisco', 'Palha'),
 (5, '2400-078', 'Leiria', 'Rua Júlio Diniz', '1974-02-01', '910000019', 'Masculino', '109901109', 'lmsilva78@gmail.com', 'Luís', 'Silva'),
@@ -27,26 +26,26 @@ VALUES
 (8, '2400-004', 'Leiria', 'Rua Maria Joana', '2000-10-10', '910101019', 'Feminino', '100100100', 'fidalgo10@gmail.com', 'Joana', 'Fidalgo'),
 (9, '2520-205', 'Peniche', 'Rua José o Pescador', '2001-05-05', '915519915', 'Masculino', '105105105', 'danielmoreira@hotmail.com', 'Daniel', 'Moreira'),
 (10, '2520-202', 'Peniche', 'Rua Mateus Gouveia', '2002-02-02', '912021201', 'Feminino', '212000212', 'carolinasous02@sapo.pt', 'Carolina', 'Sousa'),
-(11, '2500-055', 'Caldas da Rainha', 'Rua Maria Assunção', '1998-01-15', '915555519', 'Feminino', '501105501', 'ritamarquz@gmail.com', 'Rita', 'Marquês');
-(12, '2400-002', 'Leiria', 'Rua Fonseca Algarve', '2002-08-29', '917722110', 'Masculino', '110022901', 'franciscosousa@gmail.com', 'Francisco', 'Sousa');
-(13, '2500-817', 'Caldas da Rainha', 'Rua Peru Cru', '2002-03-19', '968999123', 'Masculino', '111998740', 'guilhermetropa@gmail.com', 'Guilherme', 'Guerra');
-(14, '2500-026', 'Caldas da Rainha', 'Rua Fonseca Algarve', '2002-08-29', '918221221', 'Masculino', '110022901', 'andrepereira@gmail.com', 'André', 'Pereira');
-(15, '2500-002', 'Caldas da Rainha', 'Rua Joaquim Almeida', '2001-11-09', '919828121', 'Feminino', '221882192', 'joanamendes@gmail.com', 'Joana', 'Mendes');
-(16, '2500-222', 'Caldas da Rainha', 'Rua Muitas Costelas', '2003-02-01', '918221289', 'Feminino', '612312892', 'carolinamartins@gmail.com', 'Carolina', 'Martins');
-(17, '2520-200', 'Peniche', 'Rua Compra Lagos', '2003-06-20', '919886770', 'Masculino', '112190192', 'joaomercedes@gmail.com', 'João', 'Mercedes');
-(18, '2520-897', 'Peniche', 'Rua Alberto Segundo', '2000-09-22', '968991234', 'Masculino', '333444910', 'diogocentro@gmail.com', 'Diogo', 'Meios');
-(19, '2400-921', 'Leiria', 'Rua Merenda Quente', '2002-12-25', '967991221', 'Masculino', '133109210', 'andremendes@gmail.com', 'André', 'Mendes');
-(20, '2400-900', 'Leiria', 'Rua Joaquim Marcos', '2003-03-04', '969110293', 'Feminino', '291229012', 'andreiatequila@gmail.com', 'Andreia', 'Tequila');
-(21, '2400-218', 'Leiria', 'Rua Alberto Quinto', '2001-05-05', '918992192', 'Masculino', '528172890', 'luisfernandes@gmail.com', 'Luis', 'Fernandes');
-(22, '2400-321', 'Leiria', 'Rua da Felicidade', '2001-02-28', '910080089', 'Masculino', '291850291', 'leandromoreira@gmail.com', 'Leandro', 'Moreira');
-(23, '2400-452', 'Leiria', 'Rua Fonte Perto', '2000-05-16', '912835821', 'Feminino', '059182948', 'inesbernardes@gmail.com', 'Inês', 'Bernardes');
-(24, '2400-500', 'Leiria', 'Rua Faro Longe', '2002-10-10', '961029852', 'Feminino', '291858271', 'luisahenriques@gmail.com', 'Luisa', 'Henriques');
-(25, '2400-682', 'Leiria', 'Rua da Luz', '2002-09-19', '918920989', 'Masculino', '892718592', 'henriquesousa@gmail.com', 'Henrique', 'Sousa');
-(26, '2400-245', 'Leiria', 'Rua Comboio Aldante', '2003-08-02', '969112910', 'Masculino', '019228175', 'diogocosta@gmail.com', 'Diogo', 'Costa');
-(27, '2400-833', 'Leiria', 'Rua Joao Almeida', '2003-07-22', '918920977', 'Masculino', '296628666', 'fernandomendes@gmail.com', 'Fernando', 'Mendes');
-(28, '2400-122', 'Leiria', 'Rua Henrique Terceiro', '1999-04-01', '917789766', 'Feminino', '492910299', 'arianapereira@gmail.com', 'Ariana', 'Pereira');
-(29, '2400-441', 'Leiria', 'Rua Fonseca', '1999-01-30', '917221849', 'Masculino', '752174582', 'tiagogoncalves@gmail.com', 'Tiago', 'Gonçalves');
-(30, '2400-882', 'Leiria', 'Rua Jacinto Dias', '2000-01-24', '912002918', 'Feminino', '1221412829', 'beatrizoliveira@gmail.com', 'Beatriz', 'Oliveira');
+(11, '2500-055', 'Caldas da Rainha', 'Rua Maria Assunção', '1998-01-15', '915555519', 'Feminino', '501105501', 'ritamarquz@gmail.com', 'Rita', 'Marquês'),
+(12, '2400-002', 'Leiria', 'Rua Fonseca Algarve', '2002-08-29', '917722110', 'Masculino', '110022901', 'franciscosousa@gmail.com', 'Francisco', 'Sousa'),
+(13, '2500-817', 'Caldas da Rainha', 'Rua Peru Cru', '2002-03-19', '968999123', 'Masculino', '111998740', 'guilhermetropa@gmail.com', 'Guilherme', 'Guerra'),
+(14, '2500-026', 'Caldas da Rainha', 'Rua Fonseca Algarve', '2002-08-29', '918221221', 'Masculino', '110022901', 'andrepereira@gmail.com', 'André', 'Pereira'),
+(15, '2500-002', 'Caldas da Rainha', 'Rua Joaquim Almeida', '2001-11-09', '919828121', 'Feminino', '221882192', 'joanamendes@gmail.com', 'Joana', 'Mendes'),
+(16, '2500-222', 'Caldas da Rainha', 'Rua Muitas Costelas', '2003-02-01', '918221289', 'Feminino', '612312892', 'carolinamartins@gmail.com', 'Carolina', 'Martins'),
+(17, '2520-200', 'Peniche', 'Rua Compra Lagos', '2003-06-20', '919886770', 'Masculino', '112190192', 'joaomercedes@gmail.com', 'João', 'Mercedes'),
+(18, '2520-897', 'Peniche', 'Rua Alberto Segundo', '2000-09-22', '968991234', 'Masculino', '333444910', 'diogocentro@gmail.com', 'Diogo', 'Meios'),
+(19, '2400-921', 'Leiria', 'Rua Merenda Quente', '2002-12-25', '967991221', 'Masculino', '133109210', 'andremendes@gmail.com', 'André', 'Mendes'),
+(20, '2400-900', 'Leiria', 'Rua Joaquim Marcos', '2003-03-04', '969110293', 'Feminino', '291229012', 'andreiatequila@gmail.com', 'Andreia', 'Tequila'),
+(21, '2400-218', 'Leiria', 'Rua Alberto Quinto', '2001-05-05', '918992192', 'Masculino', '528172890', 'luisfernandes@gmail.com', 'Luis', 'Fernandes'),
+(22, '2400-321', 'Leiria', 'Rua da Felicidade', '2001-02-28', '910080089', 'Masculino', '291850291', 'leandromoreira@gmail.com', 'Leandro', 'Moreira'),
+(23, '2400-452', 'Leiria', 'Rua Fonte Perto', '2000-05-16', '912835821', 'Feminino', '059182948', 'inesbernardes@gmail.com', 'Inês', 'Bernardes'),
+(24, '2400-500', 'Leiria', 'Rua Faro Longe', '2002-10-10', '961029852', 'Feminino', '291858271', 'luisahenriques@gmail.com', 'Luisa', 'Henriques'),
+(25, '2400-682', 'Leiria', 'Rua da Luz', '2002-09-19', '918920989', 'Masculino', '892718592', 'henriquesousa@gmail.com', 'Henrique', 'Sousa'),
+(26, '2400-245', 'Leiria', 'Rua Comboio Aldante', '2003-08-02', '969112910', 'Masculino', '019228175', 'diogocosta@gmail.com', 'Diogo', 'Costa'),
+(27, '2400-833', 'Leiria', 'Rua Joao Almeida', '2003-07-22', '918920977', 'Masculino', '296628666', 'fernandomendes@gmail.com', 'Fernando', 'Mendes'),
+(28, '2400-122', 'Leiria', 'Rua Henrique Terceiro', '1999-04-01', '917789766', 'Feminino', '492910299', 'arianapereira@gmail.com', 'Ariana', 'Pereira'),
+(29, '2400-441', 'Leiria', 'Rua Fonseca', '1999-01-30', '917221849', 'Masculino', '752174582', 'tiagogoncalves@gmail.com', 'Tiago', 'Gonçalves'),
+(30, '2400-882', 'Leiria', 'Rua Jacinto Dias', '2000-01-24', '912002918', 'Feminino', '122141282', 'beatrizoliveira@gmail.com', 'Beatriz', 'Oliveira');
 
 INSERT INTO categorias (nome) VALUES
 ('AM'), ('A1'), ('A2'), ('A'), ('B1'), ('B'), ('C1'), ('C'), ('D1'), ('D'), ('BE'), ('C1E'), ('CE'), ('D1E'), ('DE'), ('T');
@@ -71,25 +70,25 @@ VALUES (6, 'pagou', 'passou', 3, 4),
 (8, 'pagou', 'passou', 2, 6),
 (9, 'por pagar', 'por fazer', 5, 6),
 (10, 'pagou', 'por fazer', 5, 10),
-(11, 'pagou', 'passou', 4, 6);
-(12, 'pagou', 'passou', 1, 2);
-(13, 'pagou', 'por fazer', 4, 2);
-(14, 'por pagar', 'passou', 4, 10);
-(15, 'pagou', 'passou', 4, 6);
-(16, 'por pagar', 'chumbou', 4, 6);
-(17, 'pagou', 'passou', 5, 4);
-(18, 'pagou', 'chumbou', 5, 10);
-(19, 'por pagar', 'passou', 1, 11);
-(20, 'pagou', 'passou', 1, 8);
-(21, 'por pagar', 'chumbou', 3, 6);
-(22, 'pagou', 'passou', 3, 6);
-(23, 'pagou', 'passou', 2, 6);
-(24, 'pagou', 'por fazer', 2, 4);
-(25, 'pagou', 'passou', 3, 6);
-(26, 'pagou', 'por fazer', 1, 2);
-(27, 'por pagar', 'por fazer', 1, 6);
-(28, 'por pagar', 'passou', 3, 2);
-(29, 'por pagar', 'passou', 2, 1);
+(11, 'pagou', 'passou', 4, 6),
+(12, 'pagou', 'passou', 1, 2),
+(13, 'pagou', 'por fazer', 4, 2),
+(14, 'por pagar', 'passou', 4, 10),
+(15, 'pagou', 'passou', 4, 6),
+(16, 'por pagar', 'chumbou', 4, 6),
+(17, 'pagou', 'passou', 5, 4),
+(18, 'pagou', 'chumbou', 5, 10),
+(19, 'por pagar', 'passou', 1, 11),
+(20, 'pagou', 'passou', 1, 8),
+(21, 'por pagar', 'chumbou', 3, 6),
+(22, 'pagou', 'passou', 3, 6),
+(23, 'pagou', 'passou', 2, 6),
+(24, 'pagou', 'por fazer', 2, 4),
+(25, 'pagou', 'passou', 3, 6),
+(26, 'pagou', 'por fazer', 1, 2),
+(27, 'por pagar', 'por fazer', 1, 6),
+(28, 'por pagar', 'passou', 3, 2),
+(29, 'por pagar', 'passou', 2, 1),
 (30, 'pagou', 'chumbou', 3, 10);
 
 INSERT INTO marcas (nome)
@@ -174,9 +173,9 @@ VALUES
 
 INSERT INTO exames (dtaInicio, dtaFim, estado, id_aluno, id_veiculo)
 VALUES 
-('2022-09-01 10:01:03', '2021-12-01 10:45:21', 'por fazer', 7, 9),          -- Categoria B - ID 6
-('2022-08-12 09:03:24', '2020-02-12 09:45:22', 'por fazer', 9, 7),          -- Categoria B - ID 6
-('2022-12-11 11:06:21', '2021-02-28 11:52:00', 'por fazer', 10, 18),       -- Categoria D - ID 10
+('2022-09-01 10:01:03', '2022-09-01 10:46:21', 'por fazer', 7, 9),          -- Categoria B - ID 6
+('2022-08-12 09:03:24', '2022-08-12 09:45:22', 'por fazer', 9, 7),          -- Categoria B - ID 6
+('2022-12-11 11:06:21', '2022-12-11 11:52:00', 'por fazer', 10, 18),       -- Categoria D - ID 10
 ('2020-08-28 08:34:11', '2020-08-28 09:10:00', 'passou',8, 3),          -- Categoria B - ID 6
 ('2022-03-31 09:20:59', '2022-03-31 10:02:53', 'passou',6, 19),      -- Categoria A - ID 4
 ('2017-07-11 09:20:39', '2017-07-11 10:02:53', 'passou', 11, 19),      -- Categoria A - ID 4
